@@ -4,7 +4,8 @@ ENV COMPOSER_HOME /composer
 ENV PATH ./vendor/bin:/composer/vendor/bin:$PATH
 ENV COMPOSER_ALLOW_SUPERUSER 1
 
-COPY ./pecl-redis.sh /tmp
+COPY ./scripts/pecl-redis.sh /tmp
+COPY ./scripts/wait-for-it.sh /opt
 
 # Single RUN command reduced 330Mb
 
